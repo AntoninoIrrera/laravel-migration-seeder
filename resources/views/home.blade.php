@@ -28,15 +28,16 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Azienda: {{$train->azienda}} </h5>
-                            <p class="card-text">Stazione di partenza: {{$train->stazione_di_partenza}}. stazione di arrivo: {{$train->stazione_di_arrivo}}. </p>
-                            <p class="card-text m-0">orario di partenza: {{$train->orario_di_partenza}}.</p>
-                            <p class="card-text">orario di arrivo: {{$train->orario_di_arrivo}}.</p>
-                            <p class="card-text">numero carrozze: {{$train->numero_carrozze}}</p>
+                            <p class="card-text m-0">Stazione di partenza: {{$train->stazione_di_partenza}}.</p>
+                            <p class="card-text">Stazione di arrivo: {{$train->stazione_di_arrivo}}.</p>
+                            <p class="card-text m-0">Orario di partenza: {{$train->orario_di_partenza}}.</p>
+                            <p class="card-text">Orario di arrivo: {{$train->orario_di_arrivo}}.</p>
+                            <p class="card-text">Numero carrozze: {{$train->numero_carrozze}}</p>
                             <p class="card-text m-0">
                                 @if ($train->in_orario == 0)
-                                treno in orario.
+                                Treno in orario.
                                 @else
-                                treno in ritardo.
+                                Treno in ritardo.
                                 @endif
                             </p>
                             <p class="card-text">
